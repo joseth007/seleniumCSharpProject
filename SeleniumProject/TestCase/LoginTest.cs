@@ -22,6 +22,7 @@ namespace SeleniumProject.TestCase
         }
         
         [Test]//Anoracion para marcar a un metodo como un caso de prueba automatizaco
+        [Category("Integration")]
         public void SuccessfulLoginTest()
         {
             LoginPage loginPage = new LoginPage(Driver);
