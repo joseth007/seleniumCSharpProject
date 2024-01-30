@@ -1,7 +1,7 @@
 name: Selenium C# CI
 on: 
   schedule: 
-    - cron: '9 * * * *'
+    - cron: '21 * * * *'
 jobs:
   build:
     runs-on: windows-latest
@@ -9,9 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 4.7.2
+        uses: actions/setup-dotnet@v4.0.0
       - name: Restore dependencies
         run: dotnet restore
       - name: Build
