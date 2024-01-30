@@ -1,7 +1,7 @@
 name: Selenium C# CI
 on: 
   schedule: 
-    - cron: '30 * * * *'
+    - cron: '36 * * * *'
 jobs:
   build:
     runs-on: windows-latest
